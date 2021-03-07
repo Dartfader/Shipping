@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="cities">
+        <form class="cities__form" id="cities-form">
+            <input class="cities__input" name="city-name" placeholder="Искать тарифную зону по названию">
+            <div class="errors"></div>
+            <div class="cities__select"></div>
+        </form>
+        <div class="empty_field"></div>
+        <template class="cities__template cities-template" id="cities-template">
+            <div class="cities__city city">
+                <option class="city__option"></option>
+                <button type="button" data-action="add-city" class="button">Добавить</button>
+            </div>
+            <div class="city__base-options base-options">
+                <div class="cities__title"></div>
+                <span class="base-options__title">Базовая стоимость поставки:</span>
+                <input class="base-options__input" data-name="charge_value" type="text" name="base-delivery-cost"  />
+                <span>р</span>
+                <button type="button" data-action="add-cost" class="button">Добавить наценку</button>
+            </div>
+            <div  class="city__weight-options weight-options">
+                    <input type="text" data-name="min"  class="weight-options__min" name="min-weight">
+                <span>кг</span>
+                    <input type="text" data-name="max"  class="weight-options__max" name="max-weight">
+                <span>кг</span>
+                    <input type="text" data-name="charge_value" class="weight-options__charge" name="charge_value">
+                <span>р</span>
+                     <span class="weight-options__output">Итоговая стоимость равна =  </span>
+                    <button type="button" data-action="remove-cost" class="button">Удалить наценку</button>
+            </div>
+        </template>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
