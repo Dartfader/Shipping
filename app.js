@@ -7,7 +7,8 @@ window.addEventListener('load', async e => {
         cityNode = citiesTemplate.content.querySelector('.city'),
         baseOptionsNode = citiesTemplate.content.querySelector('.base-options'),
         weightOptionsNode = citiesTemplate.content.querySelector('.weight-options'),
-        jsonHref = window.location.href.replace('index.html', 'cities_list.json'),
+        jsonHref = window.location.href.replace('index.html', 'https://api.jsonbin.io/b/6047a68e00e5956cd888b960'),
+        https://api.jsonbin.io/b/6047a68e00e5956cd888b960
         weightOptions=document.getElementsByClassName('weight-options'),
         citiesTitle=document.querySelector('.cities__title'),
         emptyField=document.querySelector('.empty_field');
