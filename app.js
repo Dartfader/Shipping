@@ -8,12 +8,11 @@ window.addEventListener('load', async e => {
         cityNode = citiesTemplate.content.querySelector('.city'),
         baseOptionsNode = citiesTemplate.content.querySelector('.base-options'),
         weightOptionsNode = citiesTemplate.content.querySelector('.weight-options'),
-        //jsonHref = window.location.href.replace('index.html', 'cities_list.json'),
-        jsonHref = window.location.assign('cities_list.json'),
+        jsonHref = window.location.href.replace('index.html', 'cities_list.json'),
+       // jsonHref = window.location.assign('cities_list.json'),
         weightOptions=document.getElementsByClassName('weight-options'),
         citiesTitle=document.querySelector('.cities__title'),
         emptyField=document.querySelector('.empty_field');
-
 
     let citiesList, taxZones = {};
     const res = await fetch(jsonHref);
