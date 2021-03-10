@@ -1,3 +1,6 @@
+
+ import json from  './cities_list.js';
+
 window.addEventListener('load', async e => {
     debugger;
     const citiesForm = document.querySelector('#cities-form'),
@@ -8,22 +11,19 @@ window.addEventListener('load', async e => {
         cityNode = citiesTemplate.content.querySelector('.city'),
         baseOptionsNode = citiesTemplate.content.querySelector('.base-options'),
         weightOptionsNode = citiesTemplate.content.querySelector('.weight-options'),
-        jsonHref = window.location.href.replace('index.html', 'cities_list.json'),
-       // jsonHref = window.location.assign('cities_list.json'),
+        //jsonHref = window.location.href.replace('index.html', 'cities_list.js'),
+       //jsonHref = require('../cities_list.js'),
         weightOptions=document.getElementsByClassName('weight-options'),
         citiesTitle=document.querySelector('.cities__title'),
         emptyField=document.querySelector('.empty_field');
 
     let citiesList, taxZones = {};
-    const res = await fetch(jsonHref);
+   // const res = await fetch(jsonHref);
 
-    if (res.status >= 200 && res.status < 300) {
-        const data = await res.json();
+
+        const data = json;
         citiesList = data.length ? data : [];
-    } else {
-        errorsBlock.textContent = 'Произошла ошибка во время загрузки';
-        console.log('Ошибка при загрузке')
-    }
+   
 
     citiesInput.addEventListener('input', (e) => {
         const inputValue = e.target.value.trim();

@@ -24,6 +24,7 @@
   <component name="ProjectId" id="1pQQttd2aGyMaUp0q5M9Jigig3v" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -51,6 +52,7 @@
       <updated>1615113051064</updated>
       <workItem from="1615113052375" duration="1683000" />
       <workItem from="1615184169355" duration="664000" />
+      <workItem from="1615401727461" duration="336000" />
     </task>
     <servers />
   </component>

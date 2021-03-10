@@ -1,3 +1,4 @@
+export default
 [
     {
         "id": 22,
